@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header img{
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+  }
+  
+  /* img{
+      width: 40px;
+      height: 32px;
+  } */
+  
+  /* .logo{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+  } */
+  
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+    margin: 24px;
+  }
+  
+  .nav-list a:hover {
+    color: #cf9a72;
+  }
+  
+  .home {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .home-logo {
+    width: 30%;
+    /* height: 35%px; */
+    margin-left: 5rem;
+  }
+  
+  .home-greeting {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+  }
+  .home-greeting button {
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    background-color: #cf9a72;
+    width: fit-content;
+    padding: 12px 32px;
+    cursor: pointer;
+  }
+  
+  .home-greeting button:hover {
+    background-color: #e1a679;
+  }
+  .journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 4rem;
+  }
+  
+  .journey-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 6rem;
+  }
+  
+  .journey-img-3 {
+    width: 14rem;
+  }
+  
+  .journey-img-2 {
+    width: 12rem;
+  }
+  
+  .journey-img-1 {
+    width: 10rem;
+  }
+  
+  .card {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box {
+    height: 24rem;
+    width: 70rem;
+    margin-inline: auto;
+    border-radius: 3rem;
+    border: 1px solid #eacbac;
+    background: #eacbac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .reserve-info {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .reserve-info button {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #cf9a72;
+    font-family: inter;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.25rem;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .reserve-info button:hover {
+    background-color: #e1a679;
+  }
+  
+  .reserve-img img {
+    width: 85%;
+  }
+  
+  .contact{
+    margin-block: 4rem;
+  }
+  
+  .contact-info{
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 5rem;
+  }
+  
+  input {
+    width: 14rem;
+    height: 2.3rem;
+    border-radius: 1rem;
+    border: 0;
+    font-family: Inter;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  input:focus{
+      border: 0 solid #ac3636;
+  }
+  
+  .contact button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #cf9a72;
+    font-family: inter;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.25rem;
+    border: 0;
+  }
+  
+  #upBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #cf9a72; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #upBtn:hover {
+    background-color: #e1a679;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding: 60px 10%;
+    /* position: fixed; */
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    margin-block-end: .5rem;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .app-logo{
+    display: flex;
+    flex-direction: column;
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header img{
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+  }
+  
+  /* img{
+      width: 40px;
+      height: 32px;
+  } */
+  
+  /* .logo{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+  } */
+  
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+    margin: 24px;
+  }
+  
+  .nav-list a:hover {
+    color: #cf9a72;
+  }
+  
+  .home {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .home-logo {
+    width: 30%;
+    /* height: 35%px; */
+    margin-left: 5rem;
+  }
+  
+  .home-greeting {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+  }
+  .home-greeting button {
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    background-color: #cf9a72;
+    width: fit-content;
+    padding: 12px 32px;
+    cursor: pointer;
+  }
+  
+  .home-greeting button:hover {
+    background-color: #e1a679;
+  }
+  .journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 4rem;
+  }
+  
+  .journey-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 6rem;
+  }
+  
+  .journey-img-3 {
+    width: 14rem;
+  }
+  
+  .journey-img-2 {
+    width: 12rem;
+  }
+  
+  .journey-img-1 {
+    width: 10rem;
+  }
+  
+  .card {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box {
+    height: 24rem;
+    width: 70rem;
+    margin-inline: auto;
+    border-radius: 3rem;
+    border: 1px solid #eacbac;
+    background: #eacbac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+  .reserve-info {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .reserve-info button {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #cf9a72;
+    font-family: inter;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.25rem;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .reserve-info button:hover {
+    background-color: #e1a679;
+  }
+  
+  .reserve-img img {
+    width: 85%;
+  }
+  
+  .contact{
+    margin-block: 4rem;
+  }
+  
+  .contact-info{
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 5rem;
+  }
+  
+  input {
+    width: 14rem;
+    height: 2.3rem;
+    border-radius: 1rem;
+    border: 0;
+    font-family: Inter;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  input:focus{
+      border: 0 solid #ac3636;
+  }
+  
+  .contact button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #cf9a72;
+    font-family: inter;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 1.25rem;
+    border: 0;
+  }
+  
+  #upBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #cf9a72; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #upBtn:hover {
+    background-color: #e1a679;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding: 60px 10%;
+    /* position: fixed; */
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    margin-block-end: .5rem;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .app-logo{
+    display: flex;
+    flex-direction: column;
+  }
